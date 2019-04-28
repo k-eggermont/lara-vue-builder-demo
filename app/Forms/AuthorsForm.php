@@ -25,6 +25,7 @@ class AuthorsForm extends Form {
             (new \Keggermont\LaraVueBuilder\App\Fields\InputField("name")),
             (new \Keggermont\LaraVueBuilder\App\Fields\InputField("birthday"))->setPlaceholder("YYYY-MM-DD"),
             (new \Keggermont\LaraVueBuilder\App\Fields\TextareaField("biograpy"))->nullable(),
+            (new \Keggermont\LaraVueBuilder\App\Fields\UploaderField("picture"))->nullable(),
             (new \Keggermont\LaraVueBuilder\App\Fields\SelectField("is_alive"))->options([1 => "oui", 0 => "non"])->nullable(),
 
 

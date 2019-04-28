@@ -14,6 +14,10 @@ Vue.component('FormField', require('./vendor/laravuebuilder/components/FormField
 Vue.component('ResourcesIndex', require('./vendor/laravuebuilder/components/Resources/Index.vue').default);
 Vue.component('DeleteLink', require('./vendor/laravuebuilder/components/DeleteLink.vue').default);
 
+
+Vue.component('UploaderField', require('./vendor/laravuebuilder/components/Fields/Tailwind/UploaderField.vue').default);
+Vue.component('ImageUploaderField', require('./vendor/laravuebuilder/components/Fields/Tailwind/ImageUploaderField.vue').default);
+
 window.vueFormMessages = {
 
     httpCode: {
@@ -29,6 +33,9 @@ window.VueAjaxErrorMessages = {
     422: "Your form was not correctly filled."
 }
 
+if(typeof Bus == "undefined") {
+    window.Bus = new Vue();
+}
 window.MessageEvent = require('vue');
 import Message from 'vue-m-message'
 window.MessageEvent.use(Message)

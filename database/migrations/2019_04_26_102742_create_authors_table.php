@@ -18,6 +18,7 @@ class CreateAuthorsTable extends Migration
             $table->string("name");
             $table->date("birthday");
             $table->text("biograpy")->nullable();
+            $table->string("picture")->nullable();
             $table->boolean("is_alive")->default(true);
             $table->timestamps();
         });
