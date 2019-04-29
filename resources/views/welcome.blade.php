@@ -82,7 +82,7 @@
 
 <h2>Create an author</h2>
 
-        <form-field resource="Authors" :resource-id="null" :reset-on-submit="true">
+        <form-field resource="Authors" :params="{ test_id: 1 }" :resource-id="null" :reset-on-submit="true">
             <div slot="submit-text">Create</div>
         </form-field>
 

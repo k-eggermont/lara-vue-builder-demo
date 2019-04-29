@@ -6,6 +6,7 @@ Vue.component('SelectField', require('./vendor/laravuebuilder/components/Fields/
 Vue.component('TextareaField', require('./vendor/laravuebuilder/components/Fields/Tailwind/TextareaField.vue').default);
 Vue.component('NumberField', require('./vendor/laravuebuilder/components/Fields/Tailwind/NumberField.vue').default);
 Vue.component('CheckboxField', require('./vendor/laravuebuilder/components/Fields/Tailwind/CheckboxField.vue').default);
+Vue.component('HiddenField', require('./vendor/laravuebuilder/components/Fields/Tailwind/HiddenField.vue').default);
 
 Vue.component('loader', require('./vendor/laravuebuilder/components/Loader.vue').default);
 Vue.component('progressButton', require('./vendor/laravuebuilder/components/ProgressButton').default);
@@ -16,7 +17,7 @@ Vue.component('DeleteLink', require('./vendor/laravuebuilder/components/DeleteLi
 
 
 Vue.component('UploaderField', require('./vendor/laravuebuilder/components/Fields/Tailwind/UploaderField.vue').default);
-Vue.component('ImageUploaderField', require('./vendor/laravuebuilder/components/Fields/Tailwind/ImageUploaderField.vue').default);
+Vue.component('DatetimeField', require('./vendor/laravuebuilder/components/Fields/Tailwind/DatetimeField.vue').default);
 
 window.vueFormMessages = {
 

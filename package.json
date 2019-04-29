@@ -26,6 +26,7 @@
     "dependencies": {
         "form-backend-validation": "^2.3.6",
         "tailwindcss": "^0.7.4",
+        "vue-flatpickr-component": "^8.1.2",
         "vue-m-message": "^1.1.1",
         "vue-router": "^3.0.6",
         "vue-sweetalert2": "^1.6.4"

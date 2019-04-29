@@ -23,9 +23,9 @@ class AuthorsForm extends Form {
         return [
 
             (new \Keggermont\LaraVueBuilder\App\Fields\InputField("name")),
-            (new \Keggermont\LaraVueBuilder\App\Fields\InputField("birthday"))->setPlaceholder("YYYY-MM-DD"),
+            (new \Keggermont\LaraVueBuilder\App\Fields\DateTimeField("birthday"))->setMinDate("1900-01-01")->setMaxDate(date("Y-m-d"))->setDisplayDateFormat("d-m-Y")->setEnableTime(false),
             (new \Keggermont\LaraVueBuilder\App\Fields\TextareaField("biograpy"))->nullable(),
-            (new \Keggermont\LaraVueBuilder\App\Fields\UploaderField("picture"))->nullable(),
+            (new \Keggermont\LaraVueBuilder\App\Fields\UploaderField("picture"))->nullable(true),
             (new \Keggermont\LaraVueBuilder\App\Fields\SelectField("is_alive"))->options([1 => "oui", 0 => "non"])->nullable(),
 
 
@@ -37,6 +37,8 @@ class AuthorsForm extends Form {
         /**
          * You can update this method for adding custom processing before insert/update
          */
+
+        request()->validate([ "test_id" => "array|required"]);
         return $model;
     }
 
